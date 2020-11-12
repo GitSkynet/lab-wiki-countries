@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
+      <div className="divapp">
       <CountriesList />
       <Switch> 
         <Route exact path="/:cca3" render={props => (
@@ -21,6 +21,8 @@ function App() {
         <Route exact path='/country' component={CountriesList}/>
         <Route exact path='/country/:cca3' component={CountryDetails}/>
       </Switch> */}
+      </div>
+      
     </div>
   );
 }
